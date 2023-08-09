@@ -18,7 +18,7 @@ The "Degentoken" contract inherits from OpenZeppelin's ERC20 and ERC20Burnable c
 
 2. `mint(address _address, uint256 amount)`: Allows the owner to mint new tokens and assign them to a specific address.
 
-3. `item_list()`: A view function that returns a list of available items and their corresponding token values for redemption.
+3. `storeCompanions()`: A view function that returns a list of available Companions and their corresponding token values for redemption.
 
 4. `redeemTokens(uint256 itemCode)`: Allows users to redeem items by providing an itemCode. The contract validates the itemCode and checks if the user has enough tokens to redeem the selected item. If successful, the contract burns the corresponding amount of tokens.
 
@@ -32,7 +32,7 @@ The "Degentoken" contract inherits from OpenZeppelin's ERC20 and ERC20Burnable c
 
 ## Item Redemption
 
-Users can redeem various items using their tokens by calling the `redeemTokens` function with the appropriate itemCode. The redemption values for each item are listed in the `item_list` function.
+Users can redeem various items using their tokens by calling the `redeemTokens` function with the appropriate itemCode. The redemption values for each item are listed in the `storeCompanions` function.
 
 ## Owner Functionality
 
